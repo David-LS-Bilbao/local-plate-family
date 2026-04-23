@@ -112,5 +112,21 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Nunito', system-ui, sans-serif;
   }
+
+  h1, h2, h3, h4 {
+    font-family: 'Fraunces', 'Georgia', serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  .bg-gradient-warm { background: var(--gradient-warm); }
+  .bg-gradient-leaf { background: var(--gradient-leaf); }
+  .bg-gradient-sun { background: var(--gradient-sun); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-warm { box-shadow: var(--shadow-warm); }
+  .text-earth { color: hsl(var(--earth)); }
+  .bg-earth { background-color: hsl(var(--earth)); }
 }
