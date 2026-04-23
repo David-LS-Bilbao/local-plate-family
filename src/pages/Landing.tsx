@@ -18,6 +18,12 @@ const Landing = () => {
               Menús familiares sostenibles,
               <span className="text-earth"> pensados desde casa</span>
             </h1>
+            <p className="max-w-xl font-serif text-2xl italic text-earth/90">
+              Calidad local, salud familiar.
+              <span className="block text-base not-italic text-muted-foreground">
+                Porque la sostenibilidad empieza en tu mesa.
+              </span>
+            </p>
             <p className="max-w-xl text-lg text-muted-foreground">
               Crea menús adaptados a las necesidades de tu familia usando
               productos locales, de temporada y con menos desperdicio.
