@@ -2,9 +2,10 @@ import { useEffect, useState } from "react";
 import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 import { CalendarDays, ExternalLink, ShoppingBasket, UtensilsCrossed } from "lucide-react";
-import { loadOption, saveOption } from "@/lib/storage";
+import { loadFamily, loadOption, saveOption, FamilyMember } from "@/lib/storage";
 import { TraceAndLearnWidget } from "@/components/TraceAndLearnWidget";
 import { toast } from "sonner";
+import { MenuConfigurator } from "@/components/MenuConfigurator";
 
 const BBK_AZOKA = "https://eup.bbk.eus/es-ES/azoka/comprar";
 
@@ -38,19 +39,13 @@ const OPTIONS = [
   },
 ];
 
-const SAMPLE_MENU = [
-  { day: "Lunes", lunch: "Crema de calabaza de Markina con aceite de Bizkaia", dinner: "Tortilla de pimiento de Gernika" },
-  { day: "Martes", lunch: "Alubias rojas de Tolosa con verduras de temporada", dinner: "Merluza al horno con patata de Álava" },
-  { day: "Miércoles", lunch: "Ensalada de tomate de huerta y queso Idiazabal", dinner: "Revuelto de perretxikos" },
-  { day: "Jueves", lunch: "Garbanzos guisados con acelgas locales", dinner: "Bonito del Cantábrico a la plancha" },
-  { day: "Viernes", lunch: "Marmitako tradicional", dinner: "Pisto de verduras de la huerta vasca" },
-];
-
 const MenuConfig = () => {
   const [selected, setSelected] = useState<number | null>(null);
+  const [family, setFamily] = useState<FamilyMember[]>([]);
 
   useEffect(() => {
     setSelected(loadOption());
+    setFamily(loadFamily());
   }, []);
 
   const choose = (id: number) => {
@@ -136,31 +131,11 @@ const MenuConfig = () => {
             {selected === 1 && (
               <div>
                 <p className="mb-4 text-sm text-muted-foreground">
-                  Menú semanal de prueba con productos km 0 de Bizkaia
-                  (próximamente generado por IA).
+                  Configura tu menú al detalle. GertuMenu lo adapta a las
+                  alergias, intolerancias, dietas y edades de tu familia, con
+                  ingredientes km 0 de Bizkaia.
                 </p>
-                <div className="overflow-hidden rounded-2xl border border-border/60">
-                  <table className="w-full text-sm">
-                    <thead className="bg-secondary text-secondary-foreground">
-                      <tr>
-                        <th className="p-3 text-left">Día</th>
-                        <th className="p-3 text-left">Comida</th>
-                        <th className="hidden p-3 text-left sm:table-cell">Cena</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {SAMPLE_MENU.map((row) => (
-                        <tr key={row.day} className="border-t border-border/60">
-                          <td className="p-3 font-semibold">{row.day}</td>
-                          <td className="p-3">{row.lunch}</td>
-                          <td className="hidden p-3 text-muted-foreground sm:table-cell">
-                            {row.dinner}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                <MenuConfigurator family={family} />
 
                 <div className="mt-8">
                   <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-earth">
@@ -168,7 +143,7 @@ const MenuConfig = () => {
                   </p>
                   <TraceAndLearnWidget
                     onViewChain={() =>
-                      toast("Próximamente: trazabilidad on-chain con EuskoTrace")
+                      toast("Próximamente: trazabilidad on-chain con GertuMenu")
                     }
                   />
                 </div>
@@ -196,7 +171,7 @@ const MenuConfig = () => {
                 Pega tu receta favorita y la convertimos en una versión con
                 ingredientes equivalentes de productores locales de Bizkaia.
                 Esta funcionalidad está preparada para conectarse al motor de
-                trazabilidad EuskoTrace.
+                trazabilidad GertuMenu.
               </p>
             )}
           </section>

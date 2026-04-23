@@ -17,7 +17,7 @@ export const SiteHeader = () => {
             <Leaf className="h-5 w-5" />
           </span>
           <span className="font-serif text-lg font-semibold tracking-tight">
-            EuskoTrace
+            GertuMenu
           </span>
         </Link>
         <nav className="hidden gap-1 md:flex">
