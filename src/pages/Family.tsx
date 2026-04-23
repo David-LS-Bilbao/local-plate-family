@@ -224,6 +224,65 @@ const Family = () => {
             </div>
 
             <div className="space-y-2">
+              <Label htmlFor="age">Edad</Label>
+              <Input
+                id="age"
+                type="number"
+                inputMode="numeric"
+                min={0}
+                max={120}
+                value={form.age}
+                placeholder="Ej. 42"
+                onChange={(e) =>
+                  setForm({
+                    ...form,
+                    age: e.target.value.replace(/[^0-9]/g, "").slice(0, 3),
+                  })
+                }
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label>Dieta especial</Label>
+              <MultiSelectChips
+                ariaLabel="Dietas"
+                options={DIETS}
+                value={form.diets}
+                onChange={(v) => setForm({ ...form, diets: v })}
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label>Alérgenos</Label>
+              <MultiSelectChips
+                ariaLabel="Alérgenos"
+                options={ALLERGENS}
+                value={form.allergens}
+                onChange={(v) => setForm({ ...form, allergens: v })}
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label>Intolerancias</Label>
+              <MultiSelectChips
+                ariaLabel="Intolerancias"
+                options={INTOLERANCES}
+                value={form.intolerances}
+                onChange={(v) => setForm({ ...form, intolerances: v })}
+              />
+            </div>
+
+            <div className="space-y-2">
+              <Label>Condiciones médicas</Label>
+              <MultiSelectChips
+                ariaLabel="Condiciones"
+                options={CONDITIONS}
+                value={form.conditions}
+                onChange={(v) => setForm({ ...form, conditions: v })}
+              />
+            </div>
+
+            <div className="space-y-2">
               <Label htmlFor="prefs">Preferencias o necesidades</Label>
               <Textarea
                 id="prefs"
