@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { SiteHeader } from "@/components/SiteHeader";
-import { Leaf, MapPin, Sprout, Users } from "lucide-react";
+import { Leaf, MapPin, Sprout, Trophy, Users } from "lucide-react";
 import heroImg from "@/assets/hero-family.jpg";
 
 const Landing = () => {
@@ -40,6 +40,16 @@ const Landing = () => {
                 className="rounded-full border-2"
               >
                 <Link to="/menu">Ver opciones de configuración</Link>
+              </Button>
+              <Button
+                asChild
+                size="lg"
+                variant="ghost"
+                className="rounded-full"
+              >
+                <Link to="/puntos">
+                  <Trophy className="mr-2 h-4 w-4" /> Puntos en familia
+                </Link>
               </Button>
             </div>
             <dl className="grid grid-cols-3 gap-4 pt-6">
