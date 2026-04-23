@@ -99,7 +99,7 @@ const Landing = () => {
         </section>
       </main>
       <footer className="border-t border-border/60 py-8 text-center text-sm text-muted-foreground">
-        EuskoTrace · MVP Hackathon Fundación BBK · Programa IKERBAT
+        GertuMenu · MVP Hackathon Fundación BBK · Programa IKERBAT
       </footer>
     </div>
   );
