@@ -171,7 +171,7 @@ const MenuConfig = () => {
                 Pega tu receta favorita y la convertimos en una versión con
                 ingredientes equivalentes de productores locales de Bizkaia.
                 Esta funcionalidad está preparada para conectarse al motor de
-                trazabilidad EuskoTrace.
+                trazabilidad GertuMenu.
               </p>
             )}
           </section>
