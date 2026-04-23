@@ -131,31 +131,11 @@ const MenuConfig = () => {
             {selected === 1 && (
               <div>
                 <p className="mb-4 text-sm text-muted-foreground">
-                  Menú semanal de prueba con productos km 0 de Bizkaia
-                  (próximamente generado por IA).
+                  Configura tu menú al detalle. GertuMenu lo adapta a las
+                  alergias, intolerancias, dietas y edades de tu familia, con
+                  ingredientes km 0 de Bizkaia.
                 </p>
-                <div className="overflow-hidden rounded-2xl border border-border/60">
-                  <table className="w-full text-sm">
-                    <thead className="bg-secondary text-secondary-foreground">
-                      <tr>
-                        <th className="p-3 text-left">Día</th>
-                        <th className="p-3 text-left">Comida</th>
-                        <th className="hidden p-3 text-left sm:table-cell">Cena</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {SAMPLE_MENU.map((row) => (
-                        <tr key={row.day} className="border-t border-border/60">
-                          <td className="p-3 font-semibold">{row.day}</td>
-                          <td className="p-3">{row.lunch}</td>
-                          <td className="hidden p-3 text-muted-foreground sm:table-cell">
-                            {row.dinner}
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                <MenuConfigurator family={family} />
 
                 <div className="mt-8">
                   <p className="mb-3 text-sm font-semibold uppercase tracking-wider text-earth">
@@ -163,7 +143,7 @@ const MenuConfig = () => {
                   </p>
                   <TraceAndLearnWidget
                     onViewChain={() =>
-                      toast("Próximamente: trazabilidad on-chain con EuskoTrace")
+                      toast("Próximamente: trazabilidad on-chain con GertuMenu")
                     }
                   />
                 </div>
