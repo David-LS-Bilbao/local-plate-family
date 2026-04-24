@@ -205,5 +205,5 @@ La aplicación incluye varias vistas principales:
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/David-LS-Bilbao/Geru-menu.git
-cd Geru-menu
+git clone https://github.com/David-LS-Bilbao/Gertu-menu.git
+cd Gertu-menu
