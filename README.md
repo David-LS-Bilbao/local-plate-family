@@ -149,7 +149,7 @@ Esta parte funciona como concepto de producto y como posible línea futura de ev
 
 ## Equipo
 
-**Equipo 1 — Rubens (Planta 2 / Aula Ciber)**
+**Equipo de trabajo — Rubens |Team Lead|**
 
 | Nombre | Área |
 |---|---|
