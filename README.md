@@ -149,10 +149,11 @@ Esta parte funciona como concepto de producto y como posible línea futura de ev
 
 ## Equipo
 
-**Equipo de trabajo — Rubens |Team Lead|**
+**Equipo de trabajo **
 
 | Nombre | Área |
 |---|---|
+|Rubens |Team Lead|
 | Edy | Full Stack |
 | David | Full Stack |
 | Marcos | Full Stack |
