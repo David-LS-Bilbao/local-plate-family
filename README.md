@@ -1,4 +1,4 @@
-# Local Plate Family / GertuMenu
+# GertuMenu
 
 **Local Plate Family** es un prototipo web creado durante el **Prompt-a-thon AI** organizado por **The Bridge** en colaboración con **Fundación BBK**.
 
