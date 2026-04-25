@@ -166,7 +166,7 @@ Esta parte funciona como concepto de producto y como posible línea futura de ev
 | Mikel | Data Science | https://www.linkedin.com/in/mikelanibarroortega?utm_source=share_via&utm_content=profile&utm_medium=member_ios
 | Danillo | Data Science | https://www.linkedin.com/in/danillo-souza-68040a15b/
 | Juancar | Data Science | https://www.linkedin.com/in/juancarlospinamartinez 
-| Aitziber | Marketing |
+| Aitziber | Marketing | https://www.linkedin.com/in/aitziberdiezmarketingbilbao/
 | Eider | Marketing |https://www.linkedin.com/in/eider-fano-033b47276?utm_source=share_via&utm_content=profile&utm_medium=member_ios
 
 ---
