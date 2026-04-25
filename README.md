@@ -155,7 +155,7 @@ Esta parte funciona como concepto de producto y como posible línea futura de ev
 |---|---|---|
 |Rubens |Team Lead|   |
 | Edy | Full Stack |    |
-| David | Full Stack |
+| David | Full Stack | https://www.linkedin.com/in/david-lopez-sotelo-256a70154/?skipRedirect=true
 | Marcos | Full Stack |
 | Sheila | Ciberseguridad |
 | Andoni | Ciberseguridad |
