@@ -4,8 +4,9 @@
 
 El proyecto fue desarrollado como MVP en una jornada de ideación, prototipado y presentación rápida, utilizando herramientas de IA generativa y vibe-coding. La web propone una solución para ayudar a las familias a planificar menús sostenibles, saludables y adaptados a sus necesidades, priorizando productos locales, de temporada y de proximidad.
 
-PRUEBAME!!
-david-ls-bilbao.github.io/Gertu-menu/
+
+https://david-ls-bilbao.github.io/Gertu-menu/
+
 ---
 
 ## Contexto del evento
