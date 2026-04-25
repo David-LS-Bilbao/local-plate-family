@@ -151,10 +151,10 @@ Esta parte funciona como concepto de producto y como posible línea futura de ev
 
 **Equipo de trabajo **
 
-| Nombre | Área |
-|---|---|
-|Rubens |Team Lead|
-| Edy | Full Stack |
+| Nombre | Área | contact |
+|---|---|---|
+|Rubens |Team Lead|   |
+| Edy | Full Stack |    |
 | David | Full Stack |
 | Marcos | Full Stack |
 | Sheila | Ciberseguridad |
