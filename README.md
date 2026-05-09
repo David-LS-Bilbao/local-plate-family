@@ -203,6 +203,13 @@ La aplicación incluye varias vistas principales:
 
 ---
 
+## Estructura de documentación
+
+- `docs/`: carpeta de build y publicación estática para GitHub Pages. Se actualiza al generar la versión publicable del sitio.
+- `project-docs/`: documentación editable del proyecto, informes técnicos y material de trabajo que no forma parte de la build estática.
+
+---
+
 ## Estado actual del proyecto
 
 GertuMenu se encuentra actualmente en fase de **MVP/prototipo funcional**. La aplicación permite probar el flujo principal de la idea: crear un grupo familiar, configurar un menú sostenible, visualizar propuestas de platos y registrar puntos familiares por hábitos sostenibles.
