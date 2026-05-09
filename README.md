@@ -1,6 +1,6 @@
 # GertuMenu
 
-**GERTU MENU** es un prototipo web creado durante el **Prompt-a-thon AI** organizado por **The Bridge** en colaboración con **Fundación BBK**.
+**GertuMenu** es un prototipo web creado durante el **Prompt-a-thon AI** organizado por **The Bridge** en colaboración con **Fundación BBK**.
 
 El proyecto fue desarrollado como MVP en una jornada de ideación, prototipado y presentación rápida, utilizando herramientas de IA generativa y vibe-coding. La web propone una solución para ayudar a las familias a planificar menús sostenibles, saludables y adaptados a sus necesidades, priorizando productos locales, de temporada y de proximidad.
 
@@ -61,7 +61,7 @@ Muchas familias quieren comer mejor, comprar producto local y reducir desperdici
 - desconocimiento de productos de temporada;
 - falta de motivación familiar para adoptar hábitos sostenibles.
 
-**Local Plate Family** convierte esa complejidad en una experiencia sencilla, visual y gamificada.
+**GertuMenu** convierte esa complejidad en una experiencia sencilla, visual y gamificada.
 
 ---
 
@@ -152,7 +152,7 @@ Esta parte funciona como concepto de producto y como posible línea futura de ev
 
 ## Equipo
 
-**Equipo de trabajo **
+**Equipo de trabajo**
 
 | Nombre | Área | contact |
 |---|---|---|
@@ -203,6 +203,40 @@ La aplicación incluye varias vistas principales:
 
 ---
 
+## Estado actual del proyecto
+
+GertuMenu se encuentra actualmente en fase de **MVP/prototipo funcional**. La aplicación permite probar el flujo principal de la idea: crear un grupo familiar, configurar un menú sostenible, visualizar propuestas de platos y registrar puntos familiares por hábitos sostenibles.
+
+El proyecto está implementado como una aplicación frontend con React y Vite. A día de hoy:
+
+- los datos se guardan en el navegador mediante `localStorage`;
+- no hay backend ni API propia todavía;
+- no hay base de datos persistente en servidor;
+- no hay autenticación de usuarios;
+- la generación de menús usa una lógica local basada en reglas y datos embebidos;
+- la integración con BBK Azoka es conceptual mediante enlace externo;
+- la trazabilidad blockchain/EuskoTrace se presenta como simulación conceptual dentro del prototipo.
+
+El objetivo de esta versión es demostrar la propuesta de valor y servir como base para una evolución posterior hacia una aplicación de producción.
+
+---
+
+## Limitaciones del MVP
+
+Esta versión no debe interpretarse como un producto final ni como una herramienta médica o nutricional certificada.
+
+Limitaciones principales:
+
+- **Persistencia local**: la información de familia, configuración y puntos se guarda en `localStorage`, por lo que queda asociada al navegador y dispositivo del usuario.
+- **Sin backend**: todavía no existen servicios de servidor, API propia, base de datos, autenticación ni sincronización entre dispositivos.
+- **Menús generados localmente**: las propuestas se generan con una lógica de prototipo y un catálogo limitado de platos, no con un motor nutricional completo.
+- **Sin recomendaciones médicas reales**: aunque se recogen alergias, intolerancias, dietas y condiciones médicas, la aplicación no sustituye el criterio de profesionales sanitarios ni ofrece diagnóstico o tratamiento.
+- **Trazabilidad conceptual**: los elementos de blockchain, EuskoTrace, CO2 ahorrado y origen verificado funcionan como demostración visual, no como verificación real conectada a fuentes externas.
+- **Compra no integrada**: la conexión con BBK Azoka es un enlace externo, no una cesta automática ni una integración transaccional.
+- **Sin IA conectada**: el prototipo nace de una idea apoyada por IA generativa, pero la aplicación actual no llama a modelos de IA en tiempo real.
+
+---
+
 ## Instalación y ejecución local
 
 ### 1. Clonar el repositorio
@@ -210,3 +244,54 @@ La aplicación incluye varias vistas principales:
 ```bash
 git clone https://github.com/David-LS-Bilbao/Gertu-menu.git
 cd Gertu-menu
+```
+
+### 2. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 3. Ejecutar en desarrollo
+
+```bash
+npm run dev
+```
+
+La aplicación se servirá localmente con Vite. Revisa la URL que muestre la terminal, normalmente `http://localhost:8080/`.
+
+### 4. Generar build para GitHub Pages
+
+```bash
+npm run build:pages
+```
+
+Este comando genera la versión estática en `docs/` y prepara `404.html` para que React Router funcione correctamente en GitHub Pages.
+
+### 5. Previsualizar la build
+
+```bash
+npm run preview
+```
+
+### 6. Ejecutar lint
+
+```bash
+npm run lint
+```
+
+### 7. Ejecutar tests
+
+```bash
+npm run test
+```
+
+---
+
+## Despliegue
+
+La versión pública del prototipo está disponible en GitHub Pages:
+
+https://david-ls-bilbao.github.io/Gertu-menu/
+
+El proyecto está preparado para compilarse como sitio estático. Para una futura versión de producción con usuarios, API, base de datos, modelos de IA e integraciones externas, será necesario ampliar la arquitectura actual.
