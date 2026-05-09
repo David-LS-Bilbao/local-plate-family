@@ -280,6 +280,10 @@ const Family = () => {
                 value={form.conditions}
                 onChange={(v) => setForm({ ...form, conditions: v })}
               />
+              <p className="rounded-2xl bg-secondary/40 px-4 py-3 text-xs leading-relaxed text-muted-foreground">
+                Estos datos se guardan solo en este navegador. GertuMenu no
+                sustituye el consejo médico o nutricional profesional.
+              </p>
             </div>
 
             <div className="space-y-2">

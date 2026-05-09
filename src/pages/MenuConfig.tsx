@@ -66,7 +66,7 @@ const MenuConfig = () => {
           </h1>
           <p className="mt-2 text-muted-foreground">
             Elige cómo quieres planificar la alimentación de tu familia.
-            Todos los ingredientes son de origen local km 0.
+            El prototipo prioriza ingredientes locales y criterios km 0.
           </p>
         </header>
 
@@ -143,7 +143,9 @@ const MenuConfig = () => {
                   </p>
                   <TraceAndLearnWidget
                     onViewChain={() =>
-                      toast("Próximamente: trazabilidad on-chain con GertuMenu")
+                      toast(
+                        "Próximamente: trazabilidad verificable como funcionalidad futura de GertuMenu",
+                      )
                     }
                   />
                 </div>

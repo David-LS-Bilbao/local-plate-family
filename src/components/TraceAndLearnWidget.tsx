@@ -87,7 +87,7 @@ export const TraceAndLearnWidget = ({
           </h3>
         </div>
         <span className="shrink-0 rounded-full bg-card px-3 py-1 text-[11px] font-bold text-primary shadow-soft">
-          EuskoTrace ✓
+          Demo EuskoTrace
         </span>
       </header>
 
@@ -137,7 +137,7 @@ export const TraceAndLearnWidget = ({
               kg
             </p>
             <p className="text-xs text-muted-foreground">
-              CO₂ ahorrado vs. importación
+              CO₂ estimado vs. importación
             </p>
           </div>
         </section>
@@ -157,7 +157,7 @@ export const TraceAndLearnWidget = ({
       {/* CTA */}
       <footer className="flex flex-col gap-2 border-t border-border/60 bg-card p-5 sm:flex-row sm:items-center sm:justify-between">
         <p className="text-xs text-muted-foreground">
-          Datos verificados en cadena de bloques
+          Simulación educativa de trazabilidad
         </p>
         <Button
           variant="outline"
@@ -165,7 +165,7 @@ export const TraceAndLearnWidget = ({
           onClick={onViewChain}
         >
           <Link2 className="mr-2 h-4 w-4" />
-          Ver cadena de bloques · Datos EuskoTrace
+          Ver concepto de trazabilidad · Demo EuskoTrace
         </Button>
       </footer>
     </article>
