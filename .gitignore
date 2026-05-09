@@ -12,6 +12,12 @@ dist
 dist-ssr
 *.local
 
+# GitHub Pages publishes the generated static site from docs/.
+# Keep docs/ tracked; do not add it to this ignore file.
+#
+# project-docs/ contains editable project documentation.
+# Keep project-docs/ tracked as source documentation.
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
